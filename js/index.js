@@ -4,6 +4,11 @@ var $email = $('#emailField');
 
 //on keyup, start the countdown
 $email.on('keyup', function () {
+  $('#emailField').removeClass('is-danger');
+  $('#emailField').removeClass('is-success');
+  $('#emailIcon').removeClass('fa-check');
+  $('#emailIcon').removeClass('fa-exclamation-triangle');
+  $('#emailLabel').html('');
   clearTimeout(typingTimer);
   typingTimer = setTimeout(doneTyping, doneTypingInterval);
 });
@@ -15,10 +20,6 @@ $email.on('keydown', function () {
 
 //user is "finished typing," do something
 function doneTyping () {
-  $('#emailField').removeClass('is-danger');
-  $('#emailField').removeClass('is-success');
-  $('#emailIcon').removeClass('fa-check');
-  $('#emailIcon').removeClass('fa-exclamation-triangle');
    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
    if(regex.test($email.val())) {
      $('#emailField').addClass('is-success');
@@ -26,7 +27,12 @@ function doneTyping () {
    } else {
      $('#emailField').addClass('is-danger');
      $('#emailIcon').addClass('fa-exclamation-triangle');
+     $('#emailLabel').html('invailed email');
    }
+}
 
+function onSubmit() {
 
 }
+
+new WOW().init();

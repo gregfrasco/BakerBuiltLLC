@@ -20,6 +20,7 @@
     "animate.css": "^3.5.2",
     "bulma": "0.4.2",
     "font-awesome": "^4.7.0",
-    "jquery": "3.2.1"
+    "jquery": "3.2.1",
+    "wowjs": "^1.1.3"
   }
 }

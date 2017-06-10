@@ -262,7 +262,7 @@
             <hr />
             <p>
               Baker Built is run and owned by Eugene Baker, a third-generation contractor.
-              Eugene Baker has over 25 years of experience in the field of construction.
+              Eugene Baker has over 30 years of experience in the field of construction.
               Baker Built is located in scenic Bolton Landing in upstate New York and has its
               name on countless beautiful homes in and around the greater Lake George area.
               Baker Built’s hometown, Bolton Landing, is nestled in the foothills of the
@@ -284,11 +284,10 @@
         <div class="columns">
           <div class="column is-4 has-text-centered">
             <br />
-            <br />
-            <h1 class="title">Eugene and Larua Baker</h1>
+            <h1 class="title">Eugene Baker</h1>
             <hr />
             <h2 class="subtitle">518-796-8332</h2>
-            <h2 class="subtitle">bakerbuilt1@yahoo.com</h2>
+            <h2 class="subtitle"><a href="mailto:bakerbuilt1@yahoo.com" target="_top">bakerbuilt1@yahoo.com</a></h2>
             <br />
             <br />
             <p>
@@ -296,8 +295,7 @@
             </p>
           </div>
           <div class="column is-8">
-            <div class="card">
-              <div class="box">
+            <div class="box">
               <div class="field is-horizontal">
                 <div class="field-label is-normal">
                   <label class="label">From</label>
@@ -313,15 +311,15 @@
                   </div>
                   <div class="field">
                     <p class="control is-expanded has-icons-left has-icons-right">
-                      <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
+                      <input id="emailField" class="input" type="email" placeholder="Email">
                       <span class="icon is-small is-left">
                         <i class="fa fa-envelope"></i>
                       </span>
                       <span class="icon is-small is-right">
-                        <i class="fa fa-check"></i>
+                        <i id="emailIcon" class="fa"></i>
                       </span>
                     </p>
-                    <p class="help is-success">This email is correct</p>
+                    <p id="emailLabel" class="help"></p>
                   </div>
                 </div>
               </div>
@@ -377,16 +375,17 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
 
 
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        
+
       </div>
     </div>
   </footer>
+  <script src="https://cdn.rawgit.com/gregfrasco/BakerBuiltLLC/101cde09/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

@@ -2,3 +2,4 @@ User-Agent: *
 Disallow:
 Allow: /
 Allow: /portfolio
+Allow: /contact

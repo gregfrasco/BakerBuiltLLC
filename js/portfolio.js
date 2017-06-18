@@ -14,6 +14,7 @@ function update() {
       $('#Landscaping').hide();
       $('#PoleBarns').hide();
       break;
+
     case 'HomeInteriors':
       $('#HomeExteriors').hide();
       $('#HomeInteriors').show();
@@ -22,6 +23,17 @@ function update() {
       $('#Landscaping').hide();
       $('#PoleBarns').hide();
       break;
+
+    case 'DocksandBoatHouses':
+      $('#HomeExteriors').hide();
+      $('#HomeInteriors').hide();
+      $('#DocksandBoatHouses').show();
+      $('#Garages').hide();
+      $('#Landscaping').hide();
+      $('#PoleBarns').hide();
+      break;
+
+      
     default:
 
   }

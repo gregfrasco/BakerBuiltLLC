@@ -33,14 +33,54 @@ function update() {
       $('#PoleBarns').hide();
       break;
 
-      
+    case 'Garages':
+      $('#HomeExteriors').hide();
+      $('#HomeInteriors').hide();
+      $('#DocksandBoatHouses').hide();
+      $('#Garages').show();
+      $('#Landscaping').hide();
+      $('#PoleBarns').hide();
+      break;
+
+    case 'Landscaping':
+      $('#HomeExteriors').hide();
+      $('#HomeInteriors').hide();
+      $('#DocksandBoatHouses').hide();
+      $('#Garages').hide();
+      $('#Landscaping').show();
+      $('#PoleBarns').hide();
+      break;
+
+    case 'PoleBarns':
+      $('#HomeExteriors').hide();
+      $('#HomeInteriors').hide();
+      $('#DocksandBoatHouses').hide();
+      $('#Garages').hide();
+      $('#Landscaping').hide();
+      $('#PoleBarns').show();
+      break;
+
+
     default:
+      $('#HomeExteriors').show();
+      $('#HomeInteriors').show();
+      $('#DocksandBoatHouses').show();
+      $('#Garages').show();
+      $('#Landscaping').show();
+      $('#PoleBarns').show();
+      break;
 
   }
+  tabs(category);
 }
 
 function tabs(category){
-  $('li')
-
-
+  $('a').each((index, ele) => {
+    if($(ele).attr('href') != '/portfolio') {
+      $(ele).removeClass('is-active');
+      if('#' + category == $(ele).attr('href')) {
+        $(ele).addClass('is-active');
+      }
+    }
+  });
 }

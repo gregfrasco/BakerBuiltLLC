@@ -76,7 +76,7 @@ function update() {
 
 function tabs(category){
   $('a').each((index, ele) => {
-    if($(ele).attr('href') != '/portfolio') {
+    if(!$(ele).attr('href').includes('portfolio')) {
       $(ele).removeClass('is-active');
       if('#' + category == $(ele).attr('href')) {
         $(ele).addClass('is-active');

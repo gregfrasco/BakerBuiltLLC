@@ -25,14 +25,14 @@
       </span>
       <div class="nav-right nav-menu">
         <a class="nav-item is-tab" href="/">Home</a>
-        <a class="nav-item is-tab" href="/portfolio">Portfolio</a>
+        <a class="nav-item is-tab" href="/portfolio.html">Portfolio</a>
         <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio#HomeExteriors">Home Exteriors</a>
         <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio#HomeInteriors">Home Interiors</a>
         <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio#DocksandBoatHouses">Docks and Boat Houses</a>
         <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio#Garages">Garages</a>
         <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio#Landscaping">Landscaping</a>
         <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio#PoleBarns">Pole Barns</a>
-        <a class="nav-item is-tab is-active" href="/contact">Contact</a>
+        <a class="nav-item is-tab is-active" href="/contact.html">Contact</a>
       </div>
     </div>
   </nav>
@@ -54,7 +54,7 @@
               </p>
             </div>
             <div class="box">
-              <form>
+              <form action="https://formspree.io/frascog17@gmail.com" method="post" role="form">
                 <div class="field">
                   <label class="label">Name</label>
                   <p class="control has-icons-left has-icons-right">
@@ -68,7 +68,7 @@
                 <div class="field">
                   <label class="label">Email</label>
                   <p class="control has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="Email" required>
+                    <input class="input" name="email" type="email" placeholder="Email" required>
                     <span class="icon is-small is-left">
                       <i class="fa fa-envelope"></i>
                     </span>
@@ -78,19 +78,19 @@
                 <div class="field">
                   <label class="label">Subject</label>
                   <p class="control">
-                    <input class="input" type="text" placeholder="Subject" required>
+                    <input class="input" name="_subject" type="text" placeholder="Subject" required>
                   </p>
                 </div>
 
                 <div class="field">
                   <p class="control">
-                    <textarea id="questionField" class="textarea" placeholder="Explain how we can help you"></textarea>
+                    <textarea name="message" class="textarea" placeholder="Explain how we can help you" required></textarea>
                   </p>
                 </div>
-
+                <input type="text" name="_gotcha" style="display:none" />
                 <div class="field">
                   <div class="control">
-                    <button class="button is-primary">
+                    <button class="button is-primary" type="submit" value="Submit">
                       <span class="icon is-small">
                         <i class="fa fa-paper-plane" aria-hidden="true"></i>
                       </span>

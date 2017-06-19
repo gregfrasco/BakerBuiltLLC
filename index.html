@@ -78,14 +78,14 @@
     </span>
     <div class="nav-right nav-menu">
       <a class="nav-item is-tab is-active" href="/">Home</a>
-      <a class="nav-item is-tab" href="/portfolio">Portfolio</a>
-      <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio#HomeExteriors">Home Exteriors</a>
-      <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio#HomeInteriors">Home Interiors</a>
-      <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio#DocksandBoatHouses">Docks and Boat Houses</a>
-      <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio#Garages">Garages</a>
-      <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio#Landscaping">Landscaping</a>
-      <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio#PoleBarns">Pole Barns</a>
-      <a class="nav-item is-tab" href="/contact">Contact</a>
+      <a class="nav-item is-tab" href="/portfolio.html">Portfolio</a>
+      <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio.html#HomeExteriors">Home Exteriors</a>
+      <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio.html#HomeInteriors">Home Interiors</a>
+      <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio.html#DocksandBoatHouses">Docks and Boat Houses</a>
+      <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio.html#Garages">Garages</a>
+      <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio.html#Landscaping">Landscaping</a>
+      <a class="nav-item is-tab is-hidden-tablet is-hidden-desktop" href="/portfolio.html#PoleBarns">Pole Barns</a>
+      <a class="nav-item is-tab" href="/contact.html">Contact</a>
     </div>
   </div>
 </nav>
@@ -157,7 +157,7 @@
     <div class="container">
       <div class="columns">
         <div class="column wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-          <a href="/portfolio#HomeExteriors">
+          <a href="/portfolio.html#HomeExteriors">
             <div class="card">
               <div class="columns level is-gapless">
                 <div class="column is-4 is-offset-1 level-left">
@@ -175,7 +175,7 @@
           </a>
         </div>
         <div class="column wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-          <a href="/portfolio#HomeInteriors">
+          <a href="/portfolio.html#HomeInteriors">
             <div class="card">
               <div class="columns level is-gapless">
                 <div class="column is-4 is-offset-1 level-left">
@@ -193,7 +193,7 @@
           </a>
         </div>
         <div class="column wow fadeIn" data-wow-duration="1s" data-wow-delay="0.75s">
-          <a href="/portfolio#DocksandBoatHouses">
+          <a href="/portfolio.html#DocksandBoatHouses">
             <div class="card">
               <div class="columns level is-gapless">
                 <div class="column is-4 is-offset-1 level-left">
@@ -221,7 +221,7 @@
     <div class="container">
       <div class="columns">
         <div class="column wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
-          <a href="/portfolio#Garages">
+          <a href="/portfolio.html#Garages">
             <div class="card">
               <div class="columns level is-gapless">
                 <div class="column is-4 is-offset-1 level-left">
@@ -239,7 +239,7 @@
           </a>
         </div>
         <div class="column wow fadeIn" data-wow-duration="1s" data-wow-delay="1.25s">
-          <a href="/portfolio#Landscaping">
+          <a href="/portfolio.html#Landscaping">
             <div class="card">
               <div class="columns level is-gapless">
                 <div class="column is-4 is-offset-1 level-left">
@@ -257,7 +257,7 @@
           </a>
         </div>
         <div class="column wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
-          <a href="/portfolio#PoleBarns">
+          <a href="/portfolio.html#PoleBarns">
             <div class="card">
               <div class="columns level is-gapless">
                 <div class="column is-3 is-offset-1 level-left">
@@ -321,8 +321,8 @@
             Contact us for an estimate or more information
           </p>
         </div>
-        <form>
-          <div class="column is-8 wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+        <div class="column is-8 wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+          <form action="https://formspree.io/frascog17@gmail.com" method="post" role="form">
             <div class="box">
               <div class="field is-horizontal">
                 <div class="field-label is-normal">
@@ -331,7 +331,7 @@
                 <div class="field-body">
                   <div class="field is-grouped">
                     <p class="control is-expanded has-icons-left">
-                      <input class="input" type="text" placeholder="Name">
+                      <input class="input" type="text" name="name" placeholder="Name" required>
                       <span class="icon is-small is-left">
                         <i class="fa fa-user"></i>
                       </span>
@@ -339,7 +339,7 @@
                   </div>
                   <div class="field">
                     <p class="control is-expanded has-icons-left has-icons-right">
-                      <input id="emailField" class="input" type="email" placeholder="Email">
+                      <input id="emailField" class="input" type="email" name="email" placeholder="Email" required>
                       <span class="icon is-small is-left">
                         <i class="fa fa-envelope"></i>
                       </span>
@@ -359,7 +359,7 @@
                 <div class="field-body">
                   <div class="field">
                     <div class="control">
-                      <input id="subjectField" class="input" type="text" placeholder="Subject">
+                      <input id="subjectField" class="input" type="text" name="_subject" placeholder="Subject" required>
                     </div>
                     <p id="subjectLabel" class="help is-danger"></p>
                   </div>
@@ -373,12 +373,14 @@
                 <div class="field-body">
                   <div class="field">
                     <div class="control">
-                      <textarea id="questionField" class="textarea" placeholder="Explain how we can help you"></textarea>
+                      <textarea name="message" id="questionField" class="textarea" placeholder="Explain how we can help you" required></textarea>
                     </div>
                     <p id="questionLabel" class="help is-danger"></p>
                   </div>
                 </div>
               </div>
+
+              <input type="text" name="_gotcha" style="display:none" />
 
               <div class="field is-horizontal">
                 <div class="field-label">
@@ -387,7 +389,7 @@
                 <div class="field-body">
                   <div class="field">
                     <div class="control">
-                      <button class="button is-primary">
+                      <button class="button is-primary" type="submit">
                         <span class="icon is-small">
                           <i class="fa fa-paper-plane" aria-hidden="true"></i>
                         </span>
@@ -398,8 +400,8 @@
                 </div>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>

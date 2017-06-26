@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <id>urn:iweb:E9F404C5-20B6-4AD1-8FE9-371F3BC09B6E</id>
+ <title>Page list Atom feed</title>
+ <updated>2014-06-09T12:57:10-04:00</updated>
+ <link rel="self" href="feed.xml"/>
+ <generator>iWeb</generator>
+ <author>
+  <name>iWeb</name>
+ </author>
+ <entry>
+  <id>urn:iweb:E30F30CE-3574-4DC4-B262-F36A5E2E3493</id>
+  <title>Welcome</title>
+  <title xmlns="urn:iweb:">Welcome</title>
+  <in-navbar xmlns="urn:iweb:">E30F30CE-3574-4DC4-B262-F36A5E2E3493</in-navbar>
+  <link rel="alternate" href="Welcome.html"/>
+  <updated>2014-06-09T12:57:10.001-04:00</updated>
+  <content>Welcome</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:015D7474-85E8-4E2C-82B9-E3D1F0E07FFC</id>
+  <title>Portfolio</title>
+  <title xmlns="urn:iweb:">Portfolio</title>
+  <in-navbar xmlns="urn:iweb:">015D7474-85E8-4E2C-82B9-E3D1F0E07FFC</in-navbar>
+  <link rel="alternate" href="Portfolio.html"/>
+  <updated>2014-06-09T12:57:10.002-04:00</updated>
+  <content>Portfolio</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:31540956-0010-44C7-804D-B147C1174828</id>
+  <title>Contact</title>
+  <title xmlns="urn:iweb:">Contact</title>
+  <in-navbar xmlns="urn:iweb:">31540956-0010-44C7-804D-B147C1174828</in-navbar>
+  <link rel="alternate" href="Contact.html"/>
+  <updated>2014-06-09T12:57:10.003-04:00</updated>
+  <content>Contact</content>
+ </entry>
+</feed>

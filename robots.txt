@@ -1,8 +1,0 @@
-User-Agent: *
-Disallow:
-Allow: /
-Allow: /portfolio.html
-Allow: /contact.html
-Allow: /index.html
-Allow: /portfolio
-Allow: /contact
